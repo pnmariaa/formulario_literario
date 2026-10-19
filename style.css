@@ -1,0 +1,212 @@
+
+        /* =========================
+           VARIÁVEIS DE CORES
+        ========================== */
+
+        :root {
+            --cor-principal: #0B1F3A;
+            --cor-secundaria: #163A63;
+            --cor-destaque: #8CC8FF;
+
+            --cor-fundo: #EAF2FA;
+            --cor-card: #FFFFFF;
+
+            --cor-texto: #172B45;
+            --cor-texto-claro: #FFFFFF;
+
+            --cor-borda: #B5C9DF;
+
+            --sombra: 0 4px 15px rgba(11, 31, 58, 0.15);
+        }
+
+        /* =========================
+           CONFIGURAÇÃO GERAL
+        ========================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+        }
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            background-color: var(--cor-principal);
+            color: var(--cor-texto-claro);
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin-bottom: 0;
+        }
+
+        /* =========================
+           MENU
+        ========================== */
+
+        nav {
+            background-color: var(--cor-secundaria);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--cor-texto-claro);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--cor-destaque);
+        }
+
+        /* =========================
+           CONTEÚDO PRINCIPAL
+        ========================== */
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* =========================
+           FORMULÁRIO
+        ========================== */
+
+        form {
+            background-color: var(--cor-card);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--sombra);
+        }
+
+        .campo {
+            margin-bottom: 25px;
+        }
+
+        label,
+        .pergunta {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        /* CAMPOS DE ENTRADA */
+
+        input:not([type="checkbox"]):not([type="radio"]) {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--cor-borda);
+            border-radius: 6px;
+            font-size: 16px;
+            color: var(--cor-texto);
+            background-color: #FFFFFF;
+        }
+
+        input:focus {
+            outline: 2px solid var(--cor-destaque);
+            border-color: var(--cor-secundaria);
+        }
+
+        /* SELETOR DE COR */
+
+        input[type="color"] {
+            height: 45px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        /* CONTROLE DESLIZANTE */
+
+        input[type="range"] {
+            accent-color: var(--cor-secundaria);
+            cursor: pointer;
+        }
+
+        /* CHECKBOX E RADIO */
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            accent-color: var(--cor-secundaria);
+            cursor: pointer;
+        }
+
+        .opcao {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 10px 0;
+        }
+
+        .opcao label {
+            margin: 0;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        /* =========================
+           BOTÃO
+        ========================== */
+
+        button {
+            background-color: var(--cor-principal);
+            color: var(--cor-texto-claro);
+            border: none;
+            padding: 12px 25px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 6px;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--cor-secundaria);
+        }
+
+        /* =========================
+           RODAPÉ
+        ========================== */
+
+        footer {
+            background-color: var(--cor-principal);
+            color: var(--cor-texto-claro);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* =========================
+           RESPONSIVIDADE
+        ========================== */
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            main {
+                padding: 12px;
+            }
+
+            form {
+                padding: 20px;
+            }
+        }
