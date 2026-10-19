@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Formulário Literário</title>
+
+
+
+</head>
+
+<body>
+
+    <header id="inicio">
+        <h1>Universo Literário</h1>
+        <p>Conte um pouco sobre seus gostos literários!</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#formulario">Formulário</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+
+        <form id="formulario">
+
+            <div class="campo">
+                <label for="email">2. Qual é o seu e-mail?</label>
+                <input type="email" id="email" name="email"
+                    placeholder="seuemail@exemplo.com" required>
+            </div>
+          
+            <div class="campo">
+                <label for="livro">1. Qual é o seu livro favorito?</label>
+                <input type="text" id="livro" name="livro"
+                    placeholder="Digite o nome do livro" required>
+            </div>
+           
+            <div class="campo">
+                <label for="quantidade">3. Quantos livros você leu este ano?</label>
+                <input type="number" id="quantidade" name="quantidade"
+                    min="0" placeholder="Ex.: 12">
+            </div>
+
+            
+            <div class="campo">
+                <label for="data">4. Quando você terminou de ler seu último livro?</label>
+                <input type="date" id="data" name="data">
+            </div>
+
+          
+            <div class="campo">
+                <label for="cor">5. Qual é a sua cor favorita em capas de livros?</label>
+                <input type="color" id="cor" name="cor" value="#0B1F3A">
+            </div>
+
+           
+            <div class="campo">
+                <label for="nota">6. Que nota você dá ao seu livro favorito? (0 a 10)</label>
+                <input type="range" id="nota" name="nota">
+            </div>
+
+          
+            <div class="campo">
+                <span class="pergunta">7. Quais gêneros literários você gosta?</span>
+
+                <div class="opcao">
+                    <input type="checkbox" id="romance" name="generos" value="Romance">
+                    <label for="romance">Romance</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="checkbox" id="fantasia" name="generos" value="Fantasia">
+                    <label for="fantasia">Fantasia</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="checkbox" id="terror" name="generos" value="Terror">
+                    <label for="terror">Terror</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="checkbox" id="misterio" name="generos" value="Mistério">
+                    <label for="misterio">Mistério</label>
+                </div>
+            </div>
+
+         
+            <div class="campo">
+                <span class="pergunta">8. Você prefere livros físicos ou digitais?</span>
+
+                <div class="opcao">
+                    <input type="radio" id="fisico" name="formato" value="Físico" required>
+                    <label for="fisico">Livros físicos</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="radio" id="digital" name="formato" value="Digital">
+                    <label for="digital">Livros digitais</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="radio" id="audio" name="formato" value="Áudio">
+                    <label for="audio">Audiobooks</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="radio" id="ambos" name="formato" value="Ambos">
+                    <label for="ambos">Os dois formatos</label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar respostas</button>
+
+        </form>
+
+    </main>
+
+    <footer id="contato">
+        <p>Universo Literário</p>
+        <p>Formulário desenvolvido para fins educacionais.</p>
+    </footer>
+
+
+</body>
+
+</html>
